@@ -1,20 +1,19 @@
-import io
-import os
-import httpx
-from dotenv import load_dotenv
 from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, Header
 from typing import List, Optional
-import google.generativeai as genai
-from fastapi import FastAPI, Header, HTTPException
-from concurrent.futures import ThreadPoolExecutor
+import os
+import re
+import json
+from dotenv import load_dotenv
+from mistralai import Mistral
 
 load_dotenv()
 
-GENAI_API_KEY = os.getenv("GENAI_API_KEY")
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 EXPECTED_TOKEN = os.getenv("EXPECTED_TOKEN")
 
-genai.configure(api_key=GENAI_API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash-lite")
+model = "mistral-small-latest"
+client = Mistral(api_key=MISTRAL_API_KEY)
 
 app = FastAPI()
 
@@ -22,37 +21,52 @@ class QARequest(BaseModel):
     documents: str
     questions: List[str]
 
-class QAResponse(BaseModel):
-    answers: List[str]
+def ask_question(uploaded_uri, question):
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": f"""
+Answer the following questions strictly only in single line sentence format less than 25 words. 
+Return only a valid JSON array of the answers, in the same order as the questions.
+No extra keys, no extra commentary, no extra explanation — just a raw JSON array of strings.
 
-def ask_question(uploaded_uri: str, question: str) -> str:
-    response = model.generate_content(
-        contents=[{
-            "parts": [
-                {"file_data": {"file_uri": uploaded_uri, "mime_type": "application/pdf"}},
-                {"text": f"Answer in one short sentence: {question}"}
+Questions: {question}
+
+Make sure to return valid sentence which is greater than 10 words and less than 25 words and in same order.
+"""
+                },
+                {
+                    "type": "document_url",
+                    "document_url": uploaded_uri
+                }
             ]
-        }]
-    )
-    return response.text.strip()
+        }
+    ]
 
-@app.post("/hackrx/run", response_model=QAResponse)
+    chat_response = client.chat.complete(
+        model=model,
+        messages=messages
+    )
+
+    match = re.search(r"\[\s*.*?\s*\]", chat_response.choices[0].message.content, re.DOTALL)
+    if match:
+        cleaned_json_str = match.group(0)
+    else:
+        raise ValueError("No valid JSON array found in response.")
+
+    return json.loads(cleaned_json_str)
+
+@app.post("/hackrx/run")
 async def run_qa(payload: QARequest, authorization: Optional[str] = Header(None)):
     if authorization != f"Bearer {EXPECTED_TOKEN}":
         raise HTTPException(status_code=401, detail="Unauthorized")
+    
+    print(f"Doc Link: {payload.documents}")
+    print(f"Questions: {payload.questions}")
 
-    async with httpx.AsyncClient() as client:
-        pdf_response = await client.get(payload.documents)
-        if pdf_response.status_code != 200:
-            raise HTTPException(status_code=400, detail="Failed to download PDF")
-
-        doc_io = io.BytesIO(pdf_response.content)
-
-    uploaded_file = genai.upload_file(doc_io, mime_type="application/pdf")
-    uploaded_uri = uploaded_file.uri
-
-    max_workers = min(len(payload.questions), 10)
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        answers = list(executor.map(lambda q: ask_question(uploaded_uri, q), payload.questions))
+    answers = ask_question(payload.documents, payload.questions)
 
     return {"answers": answers}
