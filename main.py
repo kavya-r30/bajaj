@@ -202,6 +202,7 @@ def MRag(questions: List[str], document_url : str) -> List[str]:
     if match:
         cleaned_json_str = match.group(0)
         try:
+            print("Answer: ", cleaned_json_str)
             return json.loads(cleaned_json_str)
         except json.JSONDecodeError:
             return ["Error: Failed to parse the returned JSON array."]
@@ -271,4 +272,5 @@ async def solve_challenge_endpoint(request: ChallengeRequest, authorization: str
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
