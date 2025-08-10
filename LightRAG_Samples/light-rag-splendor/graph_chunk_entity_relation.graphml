@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Hero MotoCorp SUPER SPLENDOR">
+  <data key="d0">Hero MotoCorp SUPER SPLENDOR</data>
+  <data key="d1">organization</data>
+  <data key="d2">Hero MotoCorp is the manufacturer of the SUPER SPLENDOR motorcycle. The document is an owner's manual for this vehicle.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="SUPER SPLENDOR">
+  <data key="d0">SUPER SPLENDOR</data>
+  <data key="d1">category</data>
+  <data key="d2">The SUPER SPLENDOR is a motorcycle model manufactured by Hero MotoCorp.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="BS6 STAGE-VI (OBD STAGE II-A)">
+  <data key="d0">BS6 STAGE-VI (OBD STAGE II-A)</data>
+  <data key="d1">category</data>
+  <data key="d2">BS6 STAGE-VI (OBD STAGE II-A) is a regulation for emission, safety &amp; noise levels that the vehicle conforms to.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Ministry of Road Transport &amp; Highways (Government of India)">
+  <data key="d0">Ministry of Road Transport &amp; Highways (Government of India)</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministry of Road Transport &amp; Highways (Government of India) issued a notification regarding the 'Automatic Headlamp ON' feature.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="GSR 188 (E)">
+  <data key="d0">GSR 188 (E)</data>
+  <data key="d1">category</data>
+  <data key="d2">GSR 188 (E) is the notification number issued by the Ministry of Road Transport &amp; Highways.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Automatic Headlamp ON">
+  <data key="d0">Automatic Headlamp ON</data>
+  <data key="d1">technology</data>
+  <data key="d2">The 'Automatic Headlamp ON' feature is a lighting system mandated for all 2 Wheelers by the Ministry of Road Transport &amp; Highways.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Hero MotoCorp dealer">
+  <data key="d0">Hero MotoCorp dealer</data>
+  <data key="d1">organization</data>
+  <data key="d2">The authorized Hero MotoCorp dealer provides information, assistance, and service for the SUPER SPLENDOR.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="VIN">
+  <data key="d0">VIN</data>
+  <data key="d1">category</data>
+  <data key="d2">Vehicle Identification Number, a unique identifier for the vehicle.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="JA07AB">
+  <data key="d0">JA07AB</data>
+  <data key="d1">category</data>
+  <data key="d2">Engine number of the vehicle.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Tokyo">
+  <data key="d0">Tokyo</data>
+  <data key="d1">geo</data>
+  <data key="d2">The location of the World Athletics Championship.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="World Athletics Championship">
+  <data key="d0">World Athletics Championship</data>
+  <data key="d1">event</data>
+  <data key="d2">A global sports competition featuring top athletes in track and field.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Noah Carter">
+  <data key="d0">Noah Carter</data>
+  <data key="d1">person</data>
+  <data key="d2">Noah Carter is a sprinter who set a new record in the 100m sprint at the World Athletics Championship.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="100m Sprint Record">
+  <data key="d0">100m Sprint Record</data>
+  <data key="d1">record</data>
+  <data key="d2">The 100m sprint record is a benchmark in athletics, recently broken by Noah Carter.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Owner's Manual">
+  <data key="d0">Owner's Manual</data>
+  <data key="d1">category</data>
+  <data key="d2">The document is an owner's manual for the Hero MotoCorp SUPER SPLENDOR.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Non asbestos brake shoes/pads">
+  <data key="d0">Non asbestos brake shoes/pads</data>
+  <data key="d1">category</data>
+  <data key="d2">Non asbestos brake shoes/pads are used in the vehicle.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Engine gaskets">
+  <data key="d0">Engine gaskets</data>
+  <data key="d1">category</data>
+  <data key="d2">Engine gaskets are used in the vehicle.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="2 Wheelers">
+  <data key="d0">2 Wheelers</data>
+  <data key="d1">category</data>
+  <data key="d2">The Automatic Headlamp ON feature is mandated for all 2 Wheelers.</data>
+  <data key="d3">chunk-50f4767c893b7dc55e6ed55c6c5c9c6d</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Mode Button">
+  <data key="d0">Mode Button</data>
+  <data key="d1">category</data>
+  <data key="d2">A button used to select different display modes on the vehicle's instrument panel.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Odometer">
+  <data key="d0">Odometer</data>
+  <data key="d1">category</data>
+  <data key="d2">Displays the accumulated distance traveled by the vehicle.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Tripmeter">
+  <data key="d0">Tripmeter</data>
+  <data key="d1">category</data>
+  <data key="d2">Displays the distance traveled per trip, resettable to zero.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Real Time Mileage Indicator (RTMI)">
+  <data key="d0">Real Time Mileage Indicator (RTMI)</data>
+  <data key="d1">category</data>
+  <data key="d2">Shows the current mileage of the vehicle in km/litre, refreshed every 3 seconds.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Fuel Gauge">
+  <data key="d0">Fuel Gauge</data>
+  <data key="d1">category</data>
+  <data key="d2">Indicates the approximate amount of fuel available in the fuel tank using segments on the display.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Low Fuel Indicator">
+  <data key="d0">Low Fuel Indicator</data>
+  <data key="d1">category</data>
+  <data key="d2">A warning indicator that illuminates when the fuel level is low.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Service Reminder Indicator">
+  <data key="d0">Service Reminder Indicator</data>
+  <data key="d1">category</data>
+  <data key="d2">Indicates when the vehicle is due for service, blinking based on kilometers covered.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Hero MotoCorp">
+  <data key="d0">Hero MotoCorp</data>
+  <data key="d1">organization</data>
+  <data key="d2">The manufacturer of the vehicle, providing authorized workshops for service.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Steering Lock">
+  <data key="d0">Steering Lock</data>
+  <data key="d1">category</data>
+  <data key="d2">A feature that locks the steering wheel for security.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Ignition Key">
+  <data key="d0">Ignition Key</data>
+  <data key="d1">category</data>
+  <data key="d2">The key used to start the vehicle and operate various functions.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Handlebar Switches Control">
+  <data key="d0">Handlebar Switches Control</data>
+  <data key="d1">category</data>
+  <data key="d2">Controls located on the handlebars, including passing switch, clutch switch, headlamp dimmer switch, turn signal lamp switch, and horn switch.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Passing Switch">
+  <data key="d0">Passing Switch</data>
+  <data key="d1">category</data>
+  <data key="d2">A switch that gives an indication for passing ahead.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Clutch Switch">
+  <data key="d0">Clutch Switch</data>
+  <data key="d1">category</data>
+  <data key="d2">A switch provided for the safety of the rider, preventing the vehicle from starting unless the clutch lever is operated when the vehicle is engaged in gear.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Headlamp Dimmer Switch">
+  <data key="d0">Headlamp Dimmer Switch</data>
+  <data key="d1">category</data>
+  <data key="d2">A switch to select high or low beam for the headlamp.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Turn Signal Lamp Switch">
+  <data key="d0">Turn Signal Lamp Switch</data>
+  <data key="d1">category</data>
+  <data key="d2">A switch to activate the turn signals for right/left indications.</data>
+  <data key="d3">chunk-2316e83cd0f49ba5b2a841b8a5ac0ad9</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Days">
+  <data key="d0">Days</data>
+  <data key="d1">category</data>
+  <data key="d2">A category used to define service intervals.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Fuel Line">
+  <data key="d0">Fuel Line</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Throttle Operation">
+  <data key="d0">Throttle Operation</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Air Cleaner Element">
+  <data key="d0">Air Cleaner Element</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Spark Plug">
+  <data key="d0">Spark Plug</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Valve Clearance">
+  <data key="d0">Valve Clearance</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Engine Oil">
+  <data key="d0">Engine Oil</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Engine Oil Strainer Screen">
+  <data key="d0">Engine Oil Strainer Screen</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062439</data>
+</node>
+<node id="Engine Oil Filter">
+  <data key="d0">Engine Oil Filter</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Electric Starter">
+  <data key="d0">Electric Starter</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Oil Circulation">
+  <data key="d0">Oil Circulation</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Drive Chain">
+  <data key="d0">Drive Chain</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Drive Chain Slider">
+  <data key="d0">Drive Chain Slider</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Battery Voltage">
+  <data key="d0">Battery Voltage</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake Shoe">
+  <data key="d0">Brake Shoe</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Disc Wear/Pad Wear">
+  <data key="d0">Disc Wear/Pad Wear</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake Fluid">
+  <data key="d0">Brake Fluid</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake System (Brake Cam &amp; Brake Pedal)">
+  <data key="d0">Brake System (Brake Cam &amp; Brake Pedal)</data>
+  <data key="d1">category</data>
+  <data key="d2">A category of items to be inspected during service.</data>
+  <data key="d3">chunk-de22f2ba189a855cbc367819a62e1af3</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Rear brake">
+  <data key="d0">Rear brake</data>
+  <data key="d1">category</data>
+  <data key="d2">Refers to the braking system located at the rear wheel of the vehicle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake pedal">
+  <data key="d0">Brake pedal</data>
+  <data key="d1">category</data>
+  <data key="d2">The component used to activate the rear brake.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Free play">
+  <data key="d0">Free play</data>
+  <data key="d1">category</data>
+  <data key="d2">The amount of movement in the brake pedal before the brake engages.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Rear brake adjusting nut">
+  <data key="d0">Rear brake adjusting nut</data>
+  <data key="d1">category</data>
+  <data key="d2">A component used to adjust the rear brake.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake joint pin">
+  <data key="d0">Brake joint pin</data>
+  <data key="d1">category</data>
+  <data key="d2">A pin associated with the brake adjustment.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake arm">
+  <data key="d0">Brake arm</data>
+  <data key="d1">category</data>
+  <data key="d2">A component of the brake system.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake panel">
+  <data key="d0">Brake panel</data>
+  <data key="d1">category</data>
+  <data key="d2">A panel associated with the brake system.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake shoes">
+  <data key="d0">Brake shoes</data>
+  <data key="d1">category</data>
+  <data key="d2">The friction components that make contact with the brake drum or disc.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Front brake">
+  <data key="d0">Front brake</data>
+  <data key="d1">category</data>
+  <data key="d2">Refers to the braking system located at the front wheel of the vehicle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Front forks">
+  <data key="d0">Front forks</data>
+  <data key="d1">category</data>
+  <data key="d2">The suspension components at the front of the vehicle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Rear shock absorber">
+  <data key="d0">Rear shock absorber</data>
+  <data key="d1">category</data>
+  <data key="d2">The suspension component at the rear of the vehicle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Pin spanner">
+  <data key="d0">Pin spanner</data>
+  <data key="d1">equipment</data>
+  <data key="d2">A tool used to adjust the rear shock absorber.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Front wheel">
+  <data key="d0">Front wheel</data>
+  <data key="d1">category</data>
+  <data key="d2">The wheel located at the front of the vehicle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Front axle nut">
+  <data key="d0">Front axle nut</data>
+  <data key="d1">category</data>
+  <data key="d2">The nut that secures the front axle.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Axle">
+  <data key="d0">Axle</data>
+  <data key="d1">category</data>
+  <data key="d2">The shaft that the wheel rotates on.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Side collar">
+  <data key="d0">Side collar</data>
+  <data key="d1">category</data>
+  <data key="d2">A component of the wheel assembly.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Brake pads">
+  <data key="d0">Brake pads</data>
+  <data key="d1">category</data>
+  <data key="d2">Friction components that make contact with the brake disc.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Front brake cable">
+  <data key="d0">Front brake cable</data>
+  <data key="d1">category</data>
+  <data key="d2">The cable that activates the front brake.</data>
+  <data key="d3">chunk-2d7276103091d86d4da4afb61bef0916</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Hero MotoCorp Ltd.">
+  <data key="d0">Hero MotoCorp Ltd.</data>
+  <data key="d1">organization</data>
+  <data key="d2">Hero MotoCorp Ltd. is a company with multiple zonal, regional, and area offices across India, providing service-related support.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Flero MotoCorp Ltd.">
+  <data key="d0">Flero MotoCorp Ltd.</data>
+  <data key="d1">organization</data>
+  <data key="d2">Flero MotoCorp Ltd. is a company with multiple zonal, regional, and area offices across India, providing service-related support.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Jaipur">
+  <data key="d0">Jaipur</data>
+  <data key="d1">geo</data>
+  <data key="d2">Jaipur is a city in Rajasthan, India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Rajasthan">
+  <data key="d0">Rajasthan</data>
+  <data key="d1">geo</data>
+  <data key="d2">Rajasthan is a state in India where Hero MotoCorp Ltd. has offices in Jaipur and Udaipur.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Udaipur">
+  <data key="d0">Udaipur</data>
+  <data key="d1">geo</data>
+  <data key="d2">Udaipur is a city in Rajasthan, India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Raipur">
+  <data key="d0">Raipur</data>
+  <data key="d1">geo</data>
+  <data key="d2">Raipur is a city in Chhattisgarh, India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Chhattisgarh">
+  <data key="d0">Chhattisgarh</data>
+  <data key="d1">geo</data>
+  <data key="d2">Chhattisgarh is a state in India where Hero MotoCorp Ltd. has an office in Raipur.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Bhonal">
+  <data key="d0">Bhonal</data>
+  <data key="d1">geo</data>
+  <data key="d2">Bhonal is a location in India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Indore">
+  <data key="d0">Indore</data>
+  <data key="d1">geo</data>
+  <data key="d2">Indore is a city in Madhya Pradesh, India, where a Flero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Madhya Pradesh">
+  <data key="d0">Madhya Pradesh</data>
+  <data key="d1">geo</data>
+  <data key="d2">Madhya Pradesh is a state in India where Flero MotoCorp Ltd. has an office in Indore.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Kolkata">
+  <data key="d0">Kolkata</data>
+  <data key="d1">geo</data>
+  <data key="d2">Kolkata is a city in West Bengal, India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="West Bengal">
+  <data key="d0">West Bengal</data>
+  <data key="d1">geo</data>
+  <data key="d2">West Bengal is a state in India where Hero MotoCorp Ltd. has an office in Kolkata.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+<node id="Bhubaneswar">
+  <data key="d0">Bhubaneswar</data>
+  <data key="d1">geo</data>
+  <data key="d2">Bhubaneswar is a city in Odisha, India, where a Hero MotoCorp Ltd. office is located.</data>
+  <data key="d3">chunk-ec6cd7017d266def1b64fea709233451</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1754062440</data>
+</node>
+</graph></graphml>
