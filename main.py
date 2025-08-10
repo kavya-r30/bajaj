@@ -150,7 +150,7 @@ def GetToken(url: str) -> List[str]:
         return [f"Error parsing HTML: {e}"]
 
 @tool
-def Malayalan(questions: List[str], document_url : str) -> List[str]:
+def MRag(questions: List[str], document_url : str) -> List[str]:
     """
     Answers questions based on the context of a bilingual (Malayalam and English) PDF news article.
 
@@ -224,12 +224,12 @@ hackrx_agent = Agent(
     You MUST choose only ONE tool per request. Use the following logic to decide:
     - **Use `CityPuzzle` IF:** The URL contains `FinalRound4SubmissionPDF.pdf` AND the question is about finding a "flight number". This tool takes no arguments.
     - **Use `GetToken` IF:** The URL contains `get-secret-token` AND the question is about getting a "secret token". You MUST pass the URL from the prompt to this tool.
-    - **Use `Malayalan` IF:** The URL contains `News.pdf` AND the prompt contains a list of multiple questions (especially if some are in a foreign language like Malayalam). You MUST pass the list of questions from the prompt to this tool.
+    - **Use `MRag` IF:** The URL contains `pdf` AND the prompt contains a list of multiple questions (especially if some are in a foreign language like Malayalam or English). You MUST pass the list of questions from the prompt to this tool.
 
     **Step 3: Format the Final Output**
     Execute the chosen tool and return its output. Your final response MUST conform to the provided `response_model`, which expects a JSON object with a single key "answers" that contains a list of strings. All tools are designed to return a `List[str]`, so their output can be directly used.
     """,
-    tools=[CityPuzzle, Malayalan, GetToken],
+    tools=[CityPuzzle, MRag, GetToken],
     response_model=ResponseModel,
     success_criteria="The agent has succeeded if it correctly identifies the challenge type, executes the appropriate tool with the correct arguments, and returns the result (flight number, token, or a list of answers) formatted correctly within the `response_model`."
 )
@@ -271,3 +271,4 @@ async def solve_challenge_endpoint(request: ChallengeRequest, authorization: str
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
