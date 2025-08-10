@@ -1,6 +1,7 @@
 fastapi
 uvicorn
-httpx
+requests
+beautifulsoup4
 python-dotenv
-google-generativeai
 mistralai
+agno
