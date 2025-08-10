@@ -156,7 +156,7 @@ def Malayalan(questions: List[str], document_url : str) -> List[str]:
 
     Uses the provided PDF to answer each question in a single sentence of 
     10-25 words in the same language as the PDF context (not the question).
-    If a question's answer is not in the PDF, returns "no context given".
+    Stick to the pdf context and Return the response from the given context only.
 
     Args:
         questions (List[str]): A list of questions to be answered.
@@ -180,7 +180,7 @@ def Malayalan(questions: List[str], document_url : str) -> List[str]:
                     "text": f"""
                     Answer the following questions strictly only in single line sentence format less than 25 words in the language given of the document context not question.
                     Return only a valid JSON array of the answers, in the same order as the questions.
-                    Please stick to the pdf context and if not given in the pdf then tell no context given instead making answer of your own.
+                    Please stick to the pdf context and return the response from the given context only.
                     No extra keys, no extra commentary, no extra explanation, just a raw JSON array of strings.
 
                     Questions: {questions}
