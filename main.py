@@ -80,27 +80,32 @@ def CityPuzzle(doc_url : str) -> List[str]:
     def solve_ctf():
         mappings = func()
         if not mappings:
-            return ["Error: Could not retrieve data mappings."]
+            print("Error: Could not retrieve data mappings.")
+            return [doc_url]
         try:
             city_url = mappings.get("favorite_city_link")
             response = requests.get(city_url, timeout=10)
             response.raise_for_status()
             favorite_city = response.json().get("data", {}).get("city")
             if not favorite_city:
-                return ["Error: Could not find 'city' in the API response."]
+                print("Error: Could not find 'city' in the API response.")
+                return [doc_url]
         except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
-            return [f"Error fetching favorite city: {e}"]
+            print(f"Error fetching favorite city: {e}")
+            return [doc_url]
 
         landmark = mappings.get("city_to_landmark_mapping", {}).get(favorite_city)
         if not landmark:
-            return [f"Error: City '{favorite_city}' not found in map."]
+            print(f"Error: City '{favorite_city}' not found in map.")
+            return [doc_url]
         if isinstance(landmark, list):
             landmark = landmark[0]
 
         landmark_map = mappings.get("landmark_to_flight_link", {})
         final_url = landmark_map.get(landmark, landmark_map.get("other_landmarks"))
         if not final_url:
-            return ["Error: Could not determine final flight URL."]
+            print("Error: Could not determine final flight URL.")
+            return [doc_url]
 
         try:
             final_response = requests.get(final_url, timeout=10)
@@ -110,9 +115,11 @@ def CityPuzzle(doc_url : str) -> List[str]:
                 print(f"Flight number: {flight_number}")
                 return [flight_number]
             else:
-                return ["Error: 'flightNumber' key not found in final response."]
+                print("Error: 'flightNumber' key not found in final response.")
+                return [doc_url]
         except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
-            return [f"Error fetching final flight number: {e}"]
+            print(f"Error fetching final flight number: {e}")
+            return [doc_url]
 
     return solve_ctf()
 
@@ -143,11 +150,14 @@ def GetToken(url: str) -> List[str]:
             print(f"Extracted token: {token_value}")
             return [token_value]
         else:
-            return ["Token div not found in the HTML"]
+            print("Token div not found in the HTML")
+            return [url]
     except requests.RequestException as e:
-        return [f"Error fetching the URL: {e}"]
+        print(f"Error fetching the URL: {e}")
+        return [url]
     except Exception as e:
-        return [f"Error parsing HTML: {e}"]
+        print(f"Error parsing HTML: {e}")
+        return [url]
 
 @tool
 def MRag(questions: List[str], document_url : str) -> List[str]:
@@ -168,7 +178,6 @@ def MRag(questions: List[str], document_url : str) -> List[str]:
             Each answer is a single sentence string.
             If no context is found, the string "no context given" is used.
     """
-
     model = "mistral-small-latest"
     client = Mistral(api_key=api_key)
     messages = [
@@ -196,17 +205,18 @@ def MRag(questions: List[str], document_url : str) -> List[str]:
         }
     ]
 
-    chat_response = client.chat.complete(model=model, messages=messages)
-    content = chat_response.choices[0].message.content
-    match = re.search(r'\[.*\]', content, re.DOTALL)
-    if match:
-        cleaned_json_str = match.group(0)
-        try:
-            print("Answer: ", cleaned_json_str)
+    try:
+        chat_response = client.chat.complete(model=model, messages=messages)
+        content = chat_response.choices[0].message.content
+        match = re.search(r'\[.*\]', content, re.DOTALL)
+        if match:
+            cleaned_json_str = match.group(0)
+            print("Answers: ", cleaned_json_str)
             return json.loads(cleaned_json_str)
-        except json.JSONDecodeError:
-            return ["Error: Failed to parse the returned JSON array."]
-    return ["Error: Could not find a JSON array in the response."]
+        return questions
+    except Exception as e:
+        print(f"MRag Error: {e}")
+        return questions
 
 class ResponseModel(BaseModel):
     answers: List[str]
@@ -272,5 +282,3 @@ async def solve_challenge_endpoint(request: ChallengeRequest, authorization: str
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
